@@ -13,6 +13,7 @@
 		CEDDFC5D28A263970090F632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC5B28A263970090F632 /* Main.storyboard */; };
 		CEDDFC5F28A263990090F632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC5E28A263990090F632 /* Assets.xcassets */; };
 		CEDDFC6228A263990090F632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC6028A263990090F632 /* LaunchScreen.storyboard */; };
+		CEDDFC6A28A263AA0090F632 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC6928A263AA0090F632 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEDDFC5E28A263990090F632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDDFC6128A263990090F632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDDFC6328A263990090F632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDDFC6928A263AA0090F632 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CEDDFC5528A263970090F632 /* AppDelegate.swift */,
 				CEDDFC5728A263970090F632 /* SceneDelegate.swift */,
 				CEDDFC5928A263970090F632 /* ViewController.swift */,
+				CEDDFC6928A263AA0090F632 /* Model.swift */,
 				CEDDFC5B28A263970090F632 /* Main.storyboard */,
 				CEDDFC5E28A263990090F632 /* Assets.xcassets */,
 				CEDDFC6028A263990090F632 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CEDDFC5A28A263970090F632 /* ViewController.swift in Sources */,
 				CEDDFC5628A263970090F632 /* AppDelegate.swift in Sources */,
 				CEDDFC5828A263970090F632 /* SceneDelegate.swift in Sources */,
+				CEDDFC6A28A263AA0090F632 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
