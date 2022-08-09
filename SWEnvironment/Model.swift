@@ -6,14 +6,14 @@
 //
 
 struct People: Decodable {
-    let count: Double?
-    let results: [Result]?
+    let count: Double
+    let results: [Result]
 }
 
 struct Result: Decodable {
-    let name: String?
-    let height: String?
-    let mass: String?
-    let birth_year: String?
-    let homeworld: String?
+    let name: String
+    let height: String
+    let mass: String
+    let birth_year: String
+    let homeworld: String
 }
