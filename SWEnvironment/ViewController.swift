@@ -31,9 +31,7 @@ class ViewController: UIViewController {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-            
-            print(data)
-            
+
             do {
                 let people = try JSONDecoder().decode(People.self, from: data)
                 print(people)
