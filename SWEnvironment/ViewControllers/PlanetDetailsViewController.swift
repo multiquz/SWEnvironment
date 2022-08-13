@@ -23,7 +23,7 @@ class PlanetDetailsViewController: UIViewController {
         rotationLabel.text = "Rotation period is \(planet.rotation_period) standard hours"
         diameterLabel.text = "Planet diameter is \(planet.diameter) km"
         climateLabel.text = "Climate is characterized as \(planet.climate)"
-        populatiionLabel.text = "There live \(planet.population) creatures"
+        populatiionLabel.text = "Amount of inhabitants: \(planet.population)"
     }
     
 
