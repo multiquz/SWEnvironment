@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5ECCA128A7DEF9000D584A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5ECC9F28A7DEF9000D584A /* Main.storyboard */; };
+		CE5ECCA228A7DEF9000D584A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5ECCA028A7DEF9000D584A /* LaunchScreen.storyboard */; };
 		CEDDFC5628A263970090F632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC5528A263970090F632 /* AppDelegate.swift */; };
 		CEDDFC5828A263970090F632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC5728A263970090F632 /* SceneDelegate.swift */; };
-		CEDDFC5A28A263970090F632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC5928A263970090F632 /* ViewController.swift */; };
-		CEDDFC5D28A263970090F632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC5B28A263970090F632 /* Main.storyboard */; };
 		CEDDFC5F28A263990090F632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC5E28A263990090F632 /* Assets.xcassets */; };
-		CEDDFC6228A263990090F632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDDFC6028A263990090F632 /* LaunchScreen.storyboard */; };
 		CEDDFC6A28A263AA0090F632 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC6928A263AA0090F632 /* Model.swift */; };
+		CEDDFC6C28A7A2CE0090F632 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC6B28A7A2CE0090F632 /* NetworkManager.swift */; };
+		CEDDFC7428A7B00E0090F632 /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC7328A7B00E0090F632 /* HeroesTableViewController.swift */; };
+		CEDDFC7628A7B0180090F632 /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC7528A7B0180090F632 /* PlanetsTableViewController.swift */; };
+		CEDDFC7A28A7B0970090F632 /* HeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC7928A7B0970090F632 /* HeroDetailsViewController.swift */; };
+		CEDDFC7C28A7B0A10090F632 /* PlanetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDFC7B28A7B0A10090F632 /* PlanetDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE5ECC9F28A7DEF9000D584A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CE5ECCA028A7DEF9000D584A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDDFC5228A263970090F632 /* SWEnvironment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEnvironment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDDFC5528A263970090F632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDDFC5728A263970090F632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEDDFC5928A263970090F632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEDDFC5C28A263970090F632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDDFC5E28A263990090F632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEDDFC6128A263990090F632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDDFC6328A263990090F632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDDFC6928A263AA0090F632 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CEDDFC6B28A7A2CE0090F632 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEDDFC7328A7B00E0090F632 /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
+		CEDDFC7528A7B0180090F632 /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
+		CEDDFC7928A7B0970090F632 /* HeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewController.swift; sourceTree = "<group>"; };
+		CEDDFC7B28A7B0A10090F632 /* PlanetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,68 @@
 		CEDDFC5428A263970090F632 /* SWEnvironment */ = {
 			isa = PBXGroup;
 			children = (
-				CEDDFC5528A263970090F632 /* AppDelegate.swift */,
-				CEDDFC5728A263970090F632 /* SceneDelegate.swift */,
-				CEDDFC5928A263970090F632 /* ViewController.swift */,
-				CEDDFC6928A263AA0090F632 /* Model.swift */,
-				CEDDFC5B28A263970090F632 /* Main.storyboard */,
-				CEDDFC5E28A263990090F632 /* Assets.xcassets */,
-				CEDDFC6028A263990090F632 /* LaunchScreen.storyboard */,
-				CEDDFC6328A263990090F632 /* Info.plist */,
+				CEDDFC8328A7D8C70090F632 /* App */,
+				CEDDFC8228A7D8B90090F632 /* Services */,
+				CEDDFC8128A7D8B30090F632 /* Model */,
+				CEDDFC8028A7D8900090F632 /* Storyboards */,
+				CEDDFC7F28A7D8720090F632 /* ViewControllers */,
+				CEDDFC8428A7D8D30090F632 /* Resources */,
 			);
 			path = SWEnvironment;
+			sourceTree = "<group>";
+		};
+		CEDDFC7F28A7D8720090F632 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDFC7928A7B0970090F632 /* HeroDetailsViewController.swift */,
+				CEDDFC7B28A7B0A10090F632 /* PlanetDetailsViewController.swift */,
+				CEDDFC7328A7B00E0090F632 /* HeroesTableViewController.swift */,
+				CEDDFC7528A7B0180090F632 /* PlanetsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEDDFC8028A7D8900090F632 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECCA028A7DEF9000D584A /* LaunchScreen.storyboard */,
+				CE5ECC9F28A7DEF9000D584A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CEDDFC8128A7D8B30090F632 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDFC6928A263AA0090F632 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDDFC8228A7D8B90090F632 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDFC6B28A7A2CE0090F632 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEDDFC8328A7D8C70090F632 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDFC5528A263970090F632 /* AppDelegate.swift */,
+				CEDDFC5728A263970090F632 /* SceneDelegate.swift */,
+				CEDDFC6328A263990090F632 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEDDFC8428A7D8D30090F632 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDFC5E28A263990090F632 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDDFC6228A263990090F632 /* LaunchScreen.storyboard in Resources */,
+				CE5ECCA228A7DEF9000D584A /* LaunchScreen.storyboard in Resources */,
 				CEDDFC5F28A263990090F632 /* Assets.xcassets in Resources */,
-				CEDDFC5D28A263970090F632 /* Main.storyboard in Resources */,
+				CE5ECCA128A7DEF9000D584A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +201,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDDFC5A28A263970090F632 /* ViewController.swift in Sources */,
 				CEDDFC5628A263970090F632 /* AppDelegate.swift in Sources */,
+				CEDDFC6C28A7A2CE0090F632 /* NetworkManager.swift in Sources */,
 				CEDDFC5828A263970090F632 /* SceneDelegate.swift in Sources */,
+				CEDDFC7C28A7B0A10090F632 /* PlanetDetailsViewController.swift in Sources */,
 				CEDDFC6A28A263AA0090F632 /* Model.swift in Sources */,
+				CEDDFC7A28A7B0970090F632 /* HeroDetailsViewController.swift in Sources */,
+				CEDDFC7628A7B0180090F632 /* PlanetsTableViewController.swift in Sources */,
+				CEDDFC7428A7B00E0090F632 /* HeroesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CEDDFC5B28A263970090F632 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDDFC5C28A263970090F632 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CEDDFC6028A263990090F632 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDDFC6128A263990090F632 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEDDFC6428A263990090F632 /* Debug */ = {
@@ -293,7 +338,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WVNY5GBN9S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SWEnvironment/Info.plist;
+				INFOPLIST_FILE = SWEnvironment/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WVNY5GBN9S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SWEnvironment/Info.plist;
+				INFOPLIST_FILE = SWEnvironment/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
