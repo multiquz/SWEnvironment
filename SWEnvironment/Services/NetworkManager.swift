@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum Link: String {
     case heroes = "https://swapi.dev/api/people"
@@ -44,4 +45,5 @@ class NetworkManager {
             }
         }.resume()
     }
+    
 }

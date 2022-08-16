@@ -6,15 +6,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class HeroesTableViewController: UITableViewController {
     
     private var heroes: [Hero] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      fetchHeroes()
+        //fetchHeroes()
+        fetchHeroesManually()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,7 +36,7 @@ class HeroesTableViewController: UITableViewController {
         let hero = heroes[indexPath.row]
         performSegue(withIdentifier: "showHeroes", sender: hero)
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let heroDetailcVC = segue.destination as? HeroDetailsViewController else { return }
@@ -59,6 +61,21 @@ class HeroesTableViewController: UITableViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    private func fetchHeroesManually() {
+        AF.request(Link.heroes.rawValue)
+            .validate()
+            .responseJSON { [weak self] dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    self?.heroes = Hero.getHeroes(from: value)
+                    print(self?.heroes)
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
     }
     
 }

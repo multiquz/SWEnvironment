@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PlanetsTableViewController: UITableViewController {
     
@@ -14,7 +15,8 @@ class PlanetsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.fetchPlanets()
+   //     fetchPlanets()
+        fetchPlanetsManually()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,5 +61,20 @@ class PlanetsTableViewController: UITableViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    private func fetchPlanetsManually() {
+        AF.request(Link.planets.rawValue)
+            .validate()
+            .responseJSON { [weak self] dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    self?.planets = Planet.getPlanets(from: value)
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+
+            }
     }
 }
