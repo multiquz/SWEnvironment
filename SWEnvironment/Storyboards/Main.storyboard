@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="NhA-ll-Bub">
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hero" textLabel="Fmw-9W-f6S" imageView="ynF-OT-RVN" style="IBUITableViewCellStyleDefault" id="Ggc-8S-asw">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -46,6 +50,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Heroes" image="person.3.fill" catalog="system" id="cpX-B5-vbh"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="NhA-ll-Bub" id="5ry-ba-Zwy"/>
                         <segue destination="Di2-IL-ATt" kind="show" identifier="showHeroes" id="AmU-0h-JcN"/>
                     </connections>
                 </tableViewController>
@@ -154,6 +159,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="R8p-Ll-I0a">
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planet" textLabel="838-dm-j9b" imageView="7JO-rL-W84" style="IBUITableViewCellStyleDefault" id="dbS-XM-hzf">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -184,6 +193,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Planets" image="globe.americas.fill" catalog="system" id="8mF-XP-8Z4"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="R8p-Ll-I0a" id="ZU1-ON-wEK"/>
                         <segue destination="RDK-RS-CdN" kind="show" identifier="showPlanets" id="LDJ-Aq-bgh"/>
                     </connections>
                 </tableViewController>

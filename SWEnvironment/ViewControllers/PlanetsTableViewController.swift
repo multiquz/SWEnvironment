@@ -10,10 +10,15 @@ import Alamofire
 
 class PlanetsTableViewController: UITableViewController {
     
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     private var planets: [Planet] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
         
    //     fetchPlanets()
         fetchPlanetsManually()
@@ -71,6 +76,7 @@ class PlanetsTableViewController: UITableViewController {
                 case .success(let value):
                     self?.planets = Planet.getPlanets(from: value)
                     self?.tableView.reloadData()
+                    self?.activityIndicator.stopAnimating()
                 case .failure(let error):
                     print(error)
                 }

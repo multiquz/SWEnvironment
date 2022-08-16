@@ -10,13 +10,19 @@ import Alamofire
 
 class HeroesTableViewController: UITableViewController {
     
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     private var heroes: [Hero] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
         //fetchHeroes()
         fetchHeroesManually()
+        
+        
         
     }
     
@@ -72,6 +78,7 @@ class HeroesTableViewController: UITableViewController {
                 case .success(let value):
                     self?.heroes = Hero.getHeroes(from: value)
                     self?.tableView.reloadData()
+                    self?.activityIndicator.stopAnimating()
                 case .failure(let error):
                     print(error)
                 }
