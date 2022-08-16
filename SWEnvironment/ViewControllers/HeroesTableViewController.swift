@@ -17,6 +17,7 @@ class HeroesTableViewController: UITableViewController {
         
         //fetchHeroes()
         fetchHeroesManually()
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,7 +71,6 @@ class HeroesTableViewController: UITableViewController {
                 switch dataResponse.result {
                 case .success(let value):
                     self?.heroes = Hero.getHeroes(from: value)
-                    print(self?.heroes)
                     self?.tableView.reloadData()
                 case .failure(let error):
                     print(error)

@@ -22,6 +22,14 @@ struct Hero: Decodable {
     let birth_year: String
     let homeworld: String
     
+    init(name: String, height: String, mass: String, birth_year: String, homeworld: String) {
+        self.name = name
+        self.height = height
+        self.mass = mass
+        self.birth_year = birth_year
+        self.homeworld = homeworld
+    }
+    
     init(heroData: [String : Any]) {
         name = heroData["name"] as? String ?? ""
         height = heroData["height"] as? String ?? ""
@@ -31,12 +39,19 @@ struct Hero: Decodable {
     }
     
     static func getHeroes(from value: Any) -> [Hero] {
-        guard let heroesData = value as? [[String : Any]] else { return [] }
+        guard var heroesData = value as? [String : Any] else { return [] }
+
+        let heroesReceived = heroesData.removeValue(forKey: "results")
+        
+        guard let heroesList = heroesReceived as? [[String : Any]] else { return [] }
+        
         var heroes: [Hero] = []
-        for heroData in heroesData {
+        
+        for heroData in heroesList {
             let hero = Hero(heroData: heroData)
             heroes.append(hero)
         }
+    
         return heroes
     }
 }
@@ -48,6 +63,14 @@ struct Planet: Decodable {
     let climate: String
     let population: String
     
+    init(name: String, rotation_period: String, diameter: String, climate: String, population: String) {
+        self.name = name
+        self.rotation_period = rotation_period
+        self.diameter = diameter
+        self.climate = climate
+        self.population = population
+    }
+    
     init(planetData: [String : Any]) {
         name = planetData["name"] as? String ?? ""
         rotation_period = planetData["rotation_period"] as? String ?? ""
@@ -57,7 +80,19 @@ struct Planet: Decodable {
     }
     
     static func getPlanets(from value: Any) -> [Planet] {
-        guard let planetsData = value as? [[String : Any]] else { return [] }
-        return planetsData.compactMap { Planet(planetData: $0) }
+        guard var planetsData = value as? [String : Any] else { return [] }
+
+        let planetsReceived = planetsData.removeValue(forKey: "results")
+        
+        guard let planetsList = planetsReceived as? [[String : Any]] else { return [] }
+        
+        var planets: [Planet] = []
+        
+        for planetData in planetsList {
+            let planet = Planet(planetData: planetData)
+            planets.append(planet)
+        }
+    
+        return planets
     }
 }
